@@ -1,0 +1,82 @@
+body{
+  background-color: black;
+}
+
+.containerFlex {
+  width: 30vw;
+  height: 60vh;
+  margin-top: 20vh;
+  margin-left: 35vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+ 
+}
+
+.image {
+  position: absolute;
+  max-height: 375px;
+  min-height: 375px;
+  max-width: 275px;
+  min-width: 275px;
+  overflow: hidden;
+  border: white solid 5px;
+
+  margin: 0% 5%;
+  margin-top: -187.5px;
+  top: 50%;
+  transition: all 500ms ease;
+}
+
+.one {
+  transform: rotate(3deg) translateX(5px);
+
+}
+
+.two {
+  transform: rotate(-4deg) translateX(-7px);
+
+}
+
+.three {
+  transform: rotate(5deg) translateX(4px);
+
+}
+
+.containerFlex:hover {
+  width: 80vw;
+  height: 60vh;
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+
+.containerFlex:hover  .one{
+  transform: rotate(0deg) translateX(0px) scale(0.8, 0.8);
+ 
+}
+
+.containerFlex:hover  .two{
+  transform: rotate(0deg) translateX(150%) scale(0.8, 0.8);
+ 
+}
+
+.containerFlex:hover  .three{
+  transform: rotate(0deg) translateX(-150%) scale(0.8, 0.8);
+}
+
+.containerFlex:hover .one:hover {
+  transform:  rotate(0deg) translateX(0px) scale(1, 1);
+}
+
+.containerFlex:hover .two:hover {
+  transform: rotate(0deg) translateX(150%) scale(1, 1);
+}
+
+.containerFlex:hover .three:hover {
+  transform: rotate(0deg) translateX(-150%) scale(1, 1);
+}
+
